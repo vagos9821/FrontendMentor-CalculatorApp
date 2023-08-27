@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* numpad grid */
+
+#numpad {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0px 0px;
+    grid-template-areas: "seven eight nine delete" "four five six plus" "one two three minus" "dot zero division times" "reset reset equal equal";
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#delete {
+    grid-area: delete;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#times {
+    grid-area: times;
+}
+
+#equal {
+    grid-area: equal;
+}
+
+#reset {
+    grid-area: reset;
+}
+
+#dot {
+    grid-area: dot;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#division {
+    grid-area: division;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}

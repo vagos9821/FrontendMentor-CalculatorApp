@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="positioning.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Calculator app</title>
+
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id=ok>
+        <div id="top">
+            <h1 id="title">calc</h1>
+            <div id="themes">
+                <h5 id="theme">THEME</h5>
+                <div id="themeSlider">
+                    <p class="theme" id="theme1">1</p>
+                    <p class="theme" id="theme2">2</p>
+                    <p class="theme" id="theme3">3</p>
+                    <input class="theme-range" type="range" value="1" min="1" max="3" name="theme-range" id="themeRange">
+                </div>
+
+            </div>
+        </div>
+
+        <div id="result">
+            <input type="" name="" id="result-screen" rows="1">
+        </div>
+
+        <div id="numpad">
+            <button onclick="btn7()" class="wht-btns numbers" id="seven">7</button>
+            <button onclick="btn8()" class="wht-btns numbers" id="eight">8</button>
+            <button onclick="btn9()" class="wht-btns numbers" id="nine">9</button>
+
+            <button onclick="delBtn()" class="blue-btns numbers" id="delete">DEL</button>
+
+            <button onclick="btn4()" class="wht-btns numbers" id="four">4</button>
+            <button onclick="btn5()" class="wht-btns numbers" id="five">5</button>
+            <button onclick="btn6()" class="wht-btns numbers" id="six">6</button>
+
+            <button onclick="plusBtn()" class="wht-btns numbers" id="plus">+</button>
+
+            <button onclick="btn1()" class="wht-btns numbers" id="one">1</button>
+            <button onclick="btn2()" class="wht-btns numbers" id="two">2</button>
+            <button onclick="btn3()" class="wht-btns numbers" id="three">3</button>
+
+            <button onclick="minusBtn()" class="wht-btns " id="minus">-</button>
+            <button onclick="dotBtn()" class="wht-btns " id="dot">.</button>
+
+            <button onclick="btn0()" class="wht-btns numbers" id="zero">0</button>
+
+            <button onclick="divBtn()" class="wht-btns " id="division">/</button>
+            <button onclick="timesBtn()" class="wht-btns " id="times">x</button>
+
+            <button onclick="resetBtn()" class="blue-btns " id="reset">RESET</button>
+            <button onclick="equalBtn()" class="red-btn" id="equal">=</button>
+        </div>
+
+    </div>
+
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
+    </div>
+</body>
+
+<footer>
+    <script src="script.js"></script>
+</footer>
+
+</html>
